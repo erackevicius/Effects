@@ -1,0 +1,203 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+h1	{
+	font-family: poppins;
+	font-size: 50 px;
+	font-weight: 800;
+	color: #EB8686;
+	padding: 50px;
+	text-transform: uppercase;
+
+}
+.grow	{
+	background: #FFF3F3; 
+	border: 1px solid black;
+	border-radius: 8px;	 
+	margin: 50px auto;
+	width: 50%;
+	text-align: center;
+	transition: all 1s ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+p { 
+	font-family: poppins;
+	font-size: 20px;
+	padding-bottom: 20px;
+	color: #828282;
+	
+}
+.grow a {
+	text-decoration: none;
+	color: #828282;
+	background: 
+  linear-gradient(to right, #FFF3F3, #FFF3F3),
+  linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+	background-size: 100% 0.1em, 0 0.1em;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+}
+
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+.grow:hover {
+	-webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  background: #DFF3FF;
+}
+.screw {
+	border: 1px solid black;
+	border-radius: 8px;	 
+	margin: 50px auto;
+	height: 350px;
+	width: 50%;		
+	overflow: auto;	
+}
+.screw p {	
+	padding: 80px 70px;
+	text-align: justify;
+}
+.img {
+	float: left;	
+	transition: all 3s;
+	transition-timing-function: ease-out;	
+}
+.img:hover {
+	transform: 
+	scale(0.5) 
+	rotate(720deg);	
+}
+
+#link {
+	border: 0px;	
+	width: 50%;
+	margin: 0 auto;
+}
+.nav {
+	margin: 0 auto;
+	height: 30px;
+	background:#828282;	
+	padding: 30px 0px 0px 0px;
+}
+.button {
+	border: 1px solid red;
+	background: black;
+	height: 45px;
+	text-align: right;
+}.jpg {
+	margin: 0px auto;
+	width: 100%;
+	height: 400px;
+}
+a {
+	text-decoration: none;
+	text-align: right;	
+	color: white;
+	display: inline;
+	font-size: 15px;
+	letter-spacing: 3px;
+	padding: 10px ;	
+	background: 
+    linear-gradient(to right, white, white),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+	background-size: 100% 0.1em, 0 0.1em;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+}
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+.logo {
+	width: 10%;
+	float: left;
+	padding-left: 120px;
+	transition: all .5s;
+	transition-timing: all;
+}
+.logo:hover {
+	-webkit-transform: scale(1.3);
+    -ms-transform: scale(2.3);
+    transform: scale(2.3);
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0px 5px 10px 10px red;
+}
+
+#animation { 
+	margin: 80px auto;
+	height: 450px;
+	width: 80%;		
+}
+table {
+	border: 0px solid mediumseagreen;
+	border-spacing: 30px;
+	margin: 70px 50px 70px 50px;
+	position: relative;
+	animation-iteration-count: infinite;
+  animation-name: table;
+  animation-duration: 10s;
+}
+td {
+	width: 100px;
+	height: 100px;
+	background: green;
+	border: 3px solid red;
+	animation-name: reverse;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+.center	{
+	width: 50px;
+	height: 50px;
+	background: red;
+	margin: 0 auto;
+	animation-name: normal;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}	
+@keyframes reverse {
+	0%   
+	{background-color: red;
+	border-radius: 0%;}
+	25% 
+	{background-color: yellow;
+	 border-radius: 50%;
+	 transform: 
+	 rotate(90deg)}
+	50%  
+	{background-color: blue;
+	 border-radius: 0%;
+	 transform: rotate(0deg);}
+	 75%  
+	 {background-color: blue;
+	  border-radius: 50%;
+	  transform:rotate(90deg) }	 
+}
+@keyframes normal {
+	/*from{ background: red; }
+	to { background: yellow; }*/
+	0%   
+	{background-color: red;
+	border-radius: 0%;}
+	25% 
+	{background-color: yellow;
+	 border-radius: 50%;
+	 transform:  
+	 rotate(90deg) }
+}
+@keyframes table {
+	0%   {left:0px; top:0px;}
+  25%  {left:80%; top:0px;
+  transform: rotate(90deg)} 
+  100% {left:0px; top:0px;}
+}
+
