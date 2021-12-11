@@ -135,7 +135,7 @@ a:focus {
 	border-radius: 8px;	 
 	margin: 50px auto;
 	height: 450px;
-	width: 50%;		
+	width: 80%;		
 }
 table {
 	border: 0px solid mediumseagreen;
@@ -198,7 +198,7 @@ td {
 }
 @keyframes table {
 	0%   {left:0px; top:0px;}
-  25%  {left:500px; top:0px;
+  25%  {left:80%; top:0px;
   transform: rotate(90deg)} 
   100% {left:0px; top:0px;}
 }
